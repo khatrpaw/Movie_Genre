@@ -15,6 +15,17 @@ Library
     *  MatplotLib
     *  Skiit-learn      - for model creating,feature extraction 
     
+ Alogrithm --
+ 
+   1.Extract the data
+   2.Data Exploration and Preprocessing
+      1. Removing special character
+      2. Clean the data
+      3. Finding the keyword 
+   3. Extracting Feature - TF-IDF indicates what the importance of the word is in order to understand the document or dataset. 
+   4.Training the model
+    
+It take 10 samples from test data.    
 Run --  python genre_prediction.py
 
 Output -- ('Movie: ', 'Darkness Falls')
