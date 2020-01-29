@@ -28,13 +28,28 @@ Library
     
 It take 10 samples from test data.    
 Run --  python genre_prediction.py
+for eg: 
+Command-line :
 
-Output -- ('Movie: ', 'Darkness Falls')
+python genre_prediction.py
 
-('Description: ', 'vengeful spirit taken form tooth fairy exact vengeance town lynched years earlier opposition child grown survived')
+Output -- 
+
+('Movie: ', 'Hamlet')
+
+('Description: ', "Tony Richardson's Hamlet is based on his own stage production. Filmed entirely within the Roundhouse in London (a disused train shed), it is shot almost entirely in close up, focusing the attention on faces and language rather than action.")
 
 ('Predicted genre: ', [('Drama',)])
 
-('Actual genre: ', ['Horror', 'Thriller'])
+('Actual genre: ', ['Drama'])
 
-    
+
+('Movie: ', 'Murder by Numbers')
+
+('Description: ', 'Tenacious homicide detective Cassie Mayweather and her still-green partner are working a murder case, attempting to profile two malevolently brilliant young men: cold, calculating killers whose dark secrets might explain their crimes.')
+
+('Predicted genre: ', [('Crime', 'Drama')])
+
+('Actual genre: ', ['Crime', 'Thriller'])
+   
+..
