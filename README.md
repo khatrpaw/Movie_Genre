@@ -18,8 +18,11 @@ Library
 Run --  python genre_prediction.py
 
 Output -- ('Movie: ', 'Darkness Falls')
+
 ('Description: ', 'vengeful spirit taken form tooth fairy exact vengeance town lynched years earlier opposition child grown survived')
+
 ('Predicted genre: ', [('Drama',)])
+
 ('Actual genre: ', ['Horror', 'Thriller'])
 
     
