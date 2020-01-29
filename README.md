@@ -4,7 +4,7 @@
 Predicting Genre of the movie
 
 The dataset which conatins movie_metadata.csv and movies.csv is used downloaded from [Movies Lens ](
- https://www.kaggle.com/rounakbanik/the-movies-dataset/version/7#movies_metadata.csv) and [IMDB] (https://drive.google.com/file/d/1Dn1BZD3YxgBQJSIjbfNnmCFlDW2jdQGD/view) respectively.
+ https://www.kaggle.com/rounakbanik/the-movies-dataset/version/7#movies_metadata.csv) [need to be downlaoded cannot attach due to size] and [IMDB] (https://drive.google.com/file/d/1Dn1BZD3YxgBQJSIjbfNnmCFlDW2jdQGD/view) respectively.
  
  
 Library
