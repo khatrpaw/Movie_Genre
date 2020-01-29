@@ -108,7 +108,7 @@ for row in tqdm(movies['description']):
 	i = i+1	
 
 # Split genres and convert into dict
-for record in tdm(movies['genre']):	 
+for record in tqdm(movies['genre']):	 
 	record = record.split('|')
 	genres.append(record)
 	
@@ -165,7 +165,7 @@ multilabel_binarizer.fit(movies_new['genre_new'])
 
 # transform target variable by taking most frequent 600 words 
 y = multilabel_binarizer.transform(movies_new['genre_new'])
-tfidf_vectorizer = TfidfVectorizer(max_df=0.8, max_features=600)
+tfidf_vectorizer = TfidfVectorizer(max_df=0.8, max_features=1000)
 
 # split dataset into training and validation set spliting me 70% - 30%
 xtrain, xval, ytrain, yval = train_test_split(movies_new['clean_description'], y, test_size=0.3, random_state=9)
@@ -211,7 +211,7 @@ def infer_tags(q):
 for i in range(10): 
   k = xval.sample(1).index[0]	 
   print("Movie: ", movies_new['movie_name'][k]) 
-  print("Description: ",movies_new['clean_description'][k]) 
+  print("Description: ",movies_new['description'][k]) 
   print("Predicted genre: ", infer_tags(xval[k]))
   print("Actual genre: ",movies_new['genre_new'][k])
   print(" ")
